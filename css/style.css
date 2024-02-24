@@ -8,6 +8,7 @@
 
 body {
   padding: 10px;
+  background-color: #e5e5e5;
 }
 
 header {
@@ -86,6 +87,7 @@ nav .logo {
 
 .maintext2 {
   align-items: baseline;
+  /* width: auto; */
 }
 
 .maintext1_1 {
@@ -113,8 +115,23 @@ nav .logo {
   background-color: #e22a2c;
 }
 
+.mainsection2 {
+  display: flex;
+  gap: 30px;
+  /* justify-content: space-between; */
+}
+
+.hi {
+  min-width: 700px;
+}
+
+.hello {
+  width: auto;
+  height: auto;
+}
+
 .section2 {
-  width: 95%;
+  width: fit-content;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -147,10 +164,12 @@ nav .logo {
 .section3 {
   /* background-color: red; */
   display: flex;
-  width: 95%;
+  width: auto;
   height: 10em;
   padding: 20px;
+  justify-content: space-between;
   align-items: flex-end;
+  gap: 70px;
 }
 
 .socials {
@@ -165,4 +184,83 @@ nav .logo {
 #facebook {
   width: 40px;
   height: 40px;
+}
+
+.camera {
+  width: 200px;
+  /* min-width: 100px; */
+}
+
+#camera_number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #e22a2c;
+  padding-bottom: 10px;
+}
+
+#camera_name {
+  color: black;
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+#camera_text {
+  color: #212021;
+  font-size: 0.8em;
+  font-weight: 400;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+#camera_image {
+  width: 500px;
+  height: 350px;
+}
+
+.part3 {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.price_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #006cfa;
+  border-radius: 50%;
+  text-align: center;
+  /* vertical-align: middle; */
+}
+
+#camera_price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.2em;
+  color: white;
+}
+
+.image_buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.prev_button,
+.next_button {
+  border: 0;
+  background-color: #e5e5e5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding-bottom: 50px;
+}
+
+.next_button {
+  color: #e22a2c;
 }
