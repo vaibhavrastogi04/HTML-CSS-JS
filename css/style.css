@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ysabeau+SC:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   margin: 0;
@@ -8,18 +9,16 @@
 header {
   width: 95%;
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* vertical-align: text-bottom; */
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: center; */
 }
 
 nav {
   display: flex;
   gap: 20px;
-  /* justify-content: flex-end; */
+  justify-content: space-between;
   align-items: baseline;
-  /* vertical-align: bottom; */
 }
 
 nav .logo {
@@ -32,13 +31,33 @@ nav .logo {
 
 .leftnav {
   display: flex;
-  gap: 20px;
-  font-size: 20px;
-  vertical-align: baseline;
-  /* text-decoration-line: none; */
+  gap: 30px;
+  align-items: baseline;
+  /* vertical-align: baseline; */
 }
 
-.leftnav a {
-  /* color: aqua; */
+.leftnav1 a,
+.leftnav2 a,
+.leftnav3 a,
+.leftnav4 a,
+.leftnav5 a,
+.rightnav1 a,
+.rightnav2 a {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #212021;
   text-decoration-line: none;
+}
+
+.rightnav {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: baseline; */
+  gap: 20px;
+}
+
+.rightnav img {
+  width: 25px;
+  align-self: center;
 }
