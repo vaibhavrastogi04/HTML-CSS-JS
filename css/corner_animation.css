@@ -1,16 +1,15 @@
-body {
+/* body {
   /* Full screen width and height */
-  width: 100%;
-  min-height: 100vh;
+/* width: 100%; */
+/* min-height: 100vh; */
 
-  /* Centers the container in the middle of the screen */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 0;
-  background-color: rgb(220, 220, 220);
-}
+/* Centers the container in the middle of the screen */
+/* display: flex; */
+/* justify-content: center; */
+/* align-items: center; */
+/* margin: 0; */
+/* background-color: rgb(220, 220, 220); */
+/* }  */
 
 #container {
   perspective: 25px;
@@ -25,9 +24,4 @@ body {
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
   -o-transition: transform 0.5s;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
