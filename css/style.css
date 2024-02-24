@@ -119,6 +119,7 @@ nav .logo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  /* justify-content: space-between; */
   /* background-color: red; */
 }
 
@@ -141,4 +142,27 @@ nav .logo {
   border: 0px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+}
+
+.section3 {
+  /* background-color: red; */
+  display: flex;
+  width: 95%;
+  height: 10em;
+  padding: 20px;
+  align-items: flex-end;
+}
+
+.socials {
+  /* background-color: red;/ */
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+#twitter,
+#instagram,
+#facebook {
+  width: 40px;
+  height: 40px;
 }
