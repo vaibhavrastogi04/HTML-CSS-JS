@@ -129,7 +129,8 @@ nav .logo {
 .mainsection2 {
   display: flex;
   gap: 30px;
-  animation: slideFromBottom 2s     ;
+  animation: slideFromBottom 2s;
+  overflow: hidden;
   /* justify-content: space-between; */
 }
 
@@ -143,7 +144,9 @@ nav .logo {
 } */
 
 .section2 {
+  overflow: hidden;
   width: fit-content;
+  min-width: auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -188,7 +191,7 @@ nav .logo {
   /* background-color: red;/ */
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 15px;
 }
 
 #twitter,
@@ -271,7 +274,7 @@ nav .logo {
   /* vertical-align: middle; */
 }
 
-.price_circle{
+.price_circle {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -324,4 +327,10 @@ nav .logo {
 
 .next_button {
   color: #e22a2c;
+}
+
+#twitter:hover,
+#instagram:hover,
+#facebook:hover {
+  animation: arrows-alt 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
 }
