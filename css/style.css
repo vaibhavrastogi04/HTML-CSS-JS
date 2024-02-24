@@ -23,7 +23,7 @@ nav {
 }
 
 nav .logo {
-  color: red;
+  color: #e22a2c;
   padding-right: 20px;
   font-weight: 900;
   font-size: 1.7em;
@@ -34,7 +34,6 @@ nav .logo {
   display: flex;
   gap: 30px;
   align-items: baseline;
-  /* vertical-align: baseline; */
 }
 
 .leftnav1 a,
@@ -83,8 +82,10 @@ nav .logo {
 
 .maintext1 {
   justify-content: flex-end;
-  /* vertical-align: text-top; */
-  /* align-items: last baseline; */
+}
+
+.maintext2 {
+  align-items: baseline;
 }
 
 .maintext1_1 {
@@ -103,4 +104,41 @@ nav .logo {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 5.6em;
+}
+
+.square {
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #e22a2c;
+}
+
+.section2 {
+  width: 95%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* background-color: red; */
+}
+
+.section2 p {
+  font-size: 1.2em;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: black;
+}
+
+.catalog_button {
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #e22a2c;
+  color: white;
+  width: 210px;
+  height: 50px;
+  font-size: 1em;
+  border: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
