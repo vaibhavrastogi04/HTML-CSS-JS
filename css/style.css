@@ -101,7 +101,9 @@ nav .logo {
   font-weight: 400;
   text-indent: 30%;
   text-align: right;
-  animation: fadeIn 5s;
+  animation: fadeIn 5s both;
+  animation-delay: 0.5s;
+  opacity: 0;
 }
 
 .maintext1_2,
