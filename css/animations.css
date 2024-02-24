@@ -9,7 +9,7 @@
 
 @keyframes centerToRight {
   from {
-    transform: translateX(-110%);
+    transform: translateX(-100%);
   }
   to {
     transform: translateX(0%);
