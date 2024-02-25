@@ -132,7 +132,7 @@ nav .logo {
 .mainsection2 {
   display: flex;
   gap: 30px;
-  animation: slideFromBottom 2s;
+  /* animation: slideFromBottom 2s; */
   overflow: hidden;
   /* justify-content: space-between; */
 }
@@ -380,20 +380,16 @@ nav .logo {
   border: 5px solid;
   width: 30%;
   height: 10%;
+  animation: wiggleX 2s both;
+  opacity: 0;
   /* animation: popFromCenterToScale 2s 1 both; */
 }
 
-#collage-image-1 {
-  animation: wiggleX 2s;
-}
-
 #collage-image-2 {
-  animation: wiggleX 2s;
   animation-delay: 0.1s;
 }
 
 #collage-image-3 {
-  animation: wiggleX 2s;
   animation-delay: 0.2s;
 }
 
@@ -405,24 +401,22 @@ nav .logo {
   border: 5px solid;
   width: 20%;
   height: 5%;
+  animation: wiggleX 2s both;
+  opacity: 0;
   /* animation: popFromCenterToScale 2s 1 both; */
 }
 
 #collage-image-4 {
-  animation: wiggleX 2s;
   animation-delay: 0.3s;
 }
 
 #collage-image-5 {
-  animation: wiggleX 2s;
   animation-delay: 0.4s;
 }
 #collage-image-6 {
-  animation: wiggleX 2s;
   animation-delay: 0.5s;
 }
 #collage-image-7 {
-  animation: wiggleX 2s;
   animation-delay: 0.6s;
 }
 
