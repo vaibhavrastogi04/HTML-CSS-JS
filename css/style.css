@@ -9,12 +9,14 @@
 body {
   padding: 10px;
   background-color: #e5e5e5;
+  overflow: hidden;
 }
 
 header {
   width: 95%;
   padding: 20px;
   animation: slideFromTop 2s;
+  overflow: hidden;
 }
 
 nav {
