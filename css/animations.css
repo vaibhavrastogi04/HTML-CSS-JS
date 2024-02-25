@@ -72,3 +72,24 @@
     transform: scale(1.5) translate(0, 0);
   }
 }
+
+/* @keyframes popFromCenterToScale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+} */
+
+@keyframes wiggleX {
+  0% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translate(20%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}

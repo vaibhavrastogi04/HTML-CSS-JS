@@ -9,7 +9,7 @@
 body {
   padding: 10px;
   background-color: #e5e5e5;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -65,7 +65,8 @@ nav .logo {
   align-self: center;
 }
 
-.hr1 {
+.hr1,
+.hr2 {
   margin-left: 20px;
   width: 95%;
   border-top: 3px solid;
@@ -332,4 +333,104 @@ nav .logo {
 #instagram:hover,
 #facebook:hover {
   animation: arrows-alt 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+
+.screen2 {
+  height: 100%;
+  width: 95%;
+  padding: 20px;
+  /* background-color: #e22a2c; */
+  background-color: #e5e5e5;
+  z-index: 10;
+}
+
+#heading-text-1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  /* color: #e5e5e5; */
+  color: #000;
+  font-size: 1.5em;
+  animation: fadeIn 5s;
+  /* text-transform: uppercase; */
+}
+
+#heading-text-2 {
+  display: flex;
+  align-items: baseline;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 5.6em;
+  /* color: #e5e5e5; */
+  color: #000;
+  text-transform: uppercase;
+  animation: centerToLeft 2s;
+}
+
+.collage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: baseline;
+}
+
+#collage-image-1,
+#collage-image-2,
+#collage-image-3 {
+  position: relative;
+  border: 5px solid;
+  width: 30%;
+  height: 10%;
+  /* animation: popFromCenterToScale 2s 1 both; */
+}
+
+#collage-image-1 {
+  animation: wiggleX 2s;
+}
+
+#collage-image-2 {
+  animation: wiggleX 2s;
+  animation-delay: 0.1s;
+}
+
+#collage-image-3 {
+  animation: wiggleX 2s;
+  animation-delay: 0.2s;
+}
+
+#collage-image-4,
+#collage-image-5,
+#collage-image-6,
+#collage-image-7 {
+  position: relative;
+  border: 5px solid;
+  width: 20%;
+  height: 5%;
+  /* animation: popFromCenterToScale 2s 1 both; */
+}
+
+#collage-image-4 {
+  animation: wiggleX 2s;
+  animation-delay: 0.3s;
+}
+
+#collage-image-5 {
+  animation: wiggleX 2s;
+  animation-delay: 0.4s;
+}
+#collage-image-6 {
+  animation: wiggleX 2s;
+  animation-delay: 0.5s;
+}
+#collage-image-7 {
+  animation: wiggleX 2s;
+  animation-delay: 0.6s;
+}
+
+#credit {
+  color: #e22a2c;
+  padding-right: 20px;
+  font-weight: 900;
+  font-size: 1.7em;
+  font-family: "Montserrat", sans-serif;
+  animation: fadeIn 5s;
 }
