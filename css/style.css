@@ -12,6 +12,16 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  /* overflow-y: scroll; */
+  scroll-snap-type: y mandatory;
+}
+
+.screen-1 {
+  /* background-color: red; */
+  scroll-snap-align: start;
+}
+
 header {
   width: 95%;
   padding: 20px;
@@ -336,6 +346,10 @@ nav .logo {
 }
 
 .screen2 {
+  /* animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both; */
   height: 100%;
   width: 95%;
   padding: 20px;
@@ -403,6 +417,7 @@ nav .logo {
   height: 5%;
   animation: wiggleX 2s both;
   opacity: 0;
+  /* animation-timeline: view(); */
   /* animation: popFromCenterToScale 2s 1 both; */
 }
 
