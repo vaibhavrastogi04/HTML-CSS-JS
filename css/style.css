@@ -322,6 +322,12 @@ nav .logo {
   color: #e22a2c;
 }
 
+#twitter,
+#instagram,
+#facebook {
+  color: #000;
+}
+
 #twitter:hover,
 #instagram:hover,
 #facebook:hover {
