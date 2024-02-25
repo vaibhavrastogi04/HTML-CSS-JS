@@ -231,25 +231,16 @@ nav .logo {
   font-family: "Roboto", sans-serif;
 }
 
-.part2 {
-  width: auto;
-  height: auto;
+#container {
+  perspective: 25px;
 }
-/* #container {
-  /* width: auto;
-  height: auto; */
-/* perspective: 25px; */
-/* }  */
-/* 
+
 #inner {
-  width: 100%;
-  height: 100%;
-  background-color: black;
   transition: transform 0.5s;
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
   -o-transition: transform 0.5s;
-} */
+}
 
 #camera_image {
   width: 500px;
