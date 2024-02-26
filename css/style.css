@@ -410,7 +410,7 @@ nav .logo {
   /* animation-direction: alternate; */
   /* animation-duration: 1ms; Firefox requires this to apply the animation */
   animation-direction: alternate;
-  animation-timeline: view(80% 10%);
+  animation-timeline: view(50% 30%);
 }
 
 .collage {
@@ -434,7 +434,7 @@ nav .logo {
   /* animation-duration: 1ms;  */
   /* Firefox requires this to apply the animation */
   /* animation-direction: alternate; */
-  animation-timeline: view(90% 1%);
+  animation-timeline: view(50% 30%);
   /* animation-timeline: --timeline; */
   /* animation: popFromCenterToScale 2s 1 both; */
 }
@@ -455,12 +455,12 @@ nav .logo {
   border: 5px solid;
   width: 20%;
   height: 5%;
-  animation: wiggleX 2s both;
+  animation: wiggleX 5s both;
   opacity: 0;
   /* animation-duration: 1ms;  */
   /* Firefox requires this to apply the animation */
   /* animation-direction: alternate; */
-  animation-timeline: view(90% 1%);
+  animation-timeline: view(70% 20%);
   /* animation-timeline: view(); */
   /* animation: popFromCenterToScale 2s 1 both; */
 }
@@ -687,3 +687,7 @@ footer .footer-logo .socials #facebook {
   margin-top: 0;
   padding: 0;
 }
+
+/* .show {
+  opacity: 1;
+} */
