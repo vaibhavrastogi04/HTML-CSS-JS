@@ -10,18 +10,22 @@
 @keyframes centerToRight {
   from {
     transform: translateX(-100%);
+    opacity: 1;
   }
   to {
     transform: translateX(0%);
+    opacity: 1;
   }
 }
 
 @keyframes centerToLeft {
   from {
     transform: translateX(100%);
+    opacity: 1;
   }
   to {
     transform: translateX(0%);
+    opacity: 1;
   }
 }
 
