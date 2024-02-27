@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/animations.css" />
     <!-- <script src="jquery-3.7.1.min.js"></script> -->
   </head>
-  <body>
+  <body id="body">
     <div id="scroll-progress"></div>
     <!-- <div id="progress"></div> -->
     <main>
@@ -66,7 +66,11 @@
               <p id="typedtext1">
                 photography. We offer more than 300 retro cameras.
               </p>
-              <button type="button" class="catalog_button">
+              <button
+                type="button"
+                class="catalog_button"
+                onclick="geminiFrontEnd()"
+              >
                 SEE FULL CATALOG
               </button>
             </section>
@@ -335,4 +339,5 @@
   <!-- <script src="scripts/jquery.js"></script> -->
   <script src="scripts/scroll_animation.js"></script>
   <script src="scripts/intersection_observer.js"></script>
+  <script src="scripts/gemini_frontend.js"></script>
 </html>

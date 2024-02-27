@@ -717,3 +717,71 @@ footer .footer-logo .socials #facebook {
 /* .show {
   opacity: 1;
 } */
+
+.outer-body {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  /* background-color: red; */
+  /* margin-top: 2%; */
+  /* margin-left: 70%; */
+  /* margin-right: 20%; */
+  z-index: 99999;
+  backdrop-filter: blur(20px);
+}
+
+.inner-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f2120;
+  width: 30%;
+  height: 90vh;
+  margin-top: 2%;
+  margin-left: 65%;
+  margin-right: 20%;
+  border-radius: 10px;
+  /* gap: 10px; */
+}
+
+.chatbot-header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  padding: 10px;
+  /* background-color: #006cfa; */
+}
+
+.chatbot-header-text {
+  /* padding-right: 20%; */
+  /* padding-top: 10px; */
+  /* background-color: red; */
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2em;
+  letter-spacing: 5px;
+  color: #e22a2c;
+  border-radius: 10px;
+  /* align-self: center;
+  justify-self: center; */
+}
+
+.close-button {
+  /* padding-top: 30px; */
+  /* align-self: flex-end; */
+  /* justify-self: center; */
+}
+
+.chatbot-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  /* width: 25%; */
+  height: 100vh;
+  background: #3e3f3f;
+  border-radius: 10px;
+}
