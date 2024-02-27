@@ -46,10 +46,10 @@ function geminiFrontEnd() {
   chatBotMessageDiv.classList.add("chatbot-message");
   chatBotContentDiv.append(chatBotMessageDiv);
 
-  const messageDiv = document.createElement("div");
-  messageDiv.innerText = "What is Photonix?";
-  messageDiv.classList.add("user-message");
-  chatBotContentDiv.append(messageDiv);
+  // const messageDiv = document.createElement("div");
+  // messageDiv.innerText = "What is Photonix?";
+  // messageDiv.classList.add("user-message");
+  // chatBotContentDiv.append(messageDiv);
 
   const footerDiv = document.createElement("div");
   footerDiv.classList.add("footer-div");

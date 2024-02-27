@@ -1,23 +1,4 @@
-// require("dotenv").config();
-// import { config } from "dotenv";
 import { API_KEY } from "./api.js";
-// const { GoogleGenerativeAI } = require("@google/generative-ai");
-// const genAI = new GoogleGenerativeAI(API_KEY);
-// const genAI = new GoogleGenerativeAI(process.env.API_KEY);
-// console.log(process.env.API_KEY);
-
-// export async function runGemini(userPrompt) {
-//   const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-//   const prompt =
-//     "act like an chatbot of a retro camera selling company called PhotoNix. and its work is to interact with customers and solve their queries";
-//   const result = await model.generateContent(prompt);
-//   const modelResult = await model.generateContent(userPrompt);
-//   const modelResponse = await modelResult.response;
-//   const text = modelResponse.text();
-//   //   console.log(text);
-
-//   return text;
-// }
 
 const url =
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=" +
@@ -25,8 +6,27 @@ const url =
 
 export async function runGemini(userPrompt) {
   const data = {
-    contents: [{ parts: [{ text: userPrompt }] }],
+    contents: [
+      {
+        parts: [
+          {
+            text:
+              "Your name is Nix. You have to provide support for and answer queries exclusively for a camera company called Photonix. This company sells retro cameras. Remeber to tell users to pay attention to the fancy animations in the website. Restrict your response to 50 words.\n" +
+              userPrompt,
+          },
+        ],
+      },
+    ],
   };
+
+  const chatBotContentDiv =
+    document.getElementsByClassName("chatbot-content")[0];
+
+  const promptFooter = document.getElementsByClassName("footer-div")[0];
+  const userQueryDiv = document.createElement("div");
+  userQueryDiv.innerText = userPrompt;
+  userQueryDiv.classList.add("user-message");
+  chatBotContentDiv.insertBefore(userQueryDiv, promptFooter);
 
   const response = await fetch(url, {
     method: "POST",
@@ -37,10 +37,12 @@ export async function runGemini(userPrompt) {
   });
 
   const result = await response.json();
-  // console.log(result);
   const outputText = result.candidates[0].content.parts[0].text;
   console.log(outputText);
-  return outputText;
-}
+  // return outputText;
 
-// run();
+  const modelOutput = document.createElement("div");
+  modelOutput.innerText = outputText;
+  modelOutput.classList.add("chatbot-message");
+  chatBotContentDiv.insertBefore(modelOutput, promptFooter);
+}
