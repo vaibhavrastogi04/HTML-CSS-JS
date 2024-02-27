@@ -822,6 +822,7 @@ footer .footer-logo .socials #facebook {
 }
 
 .prompt-div {
+  font-family: "Montserrat", sans-serif;
   width: 75%;
   height: 5vh;
   background-color: #1f2120;
@@ -835,10 +836,27 @@ footer .footer-logo .socials #facebook {
 }
 
 .prompt-div::placeholder {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #e5e5e5;
+}
+
+.send_button {
+  font-size: 1em;
+  border: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  width: 15%;
+  height: 5vh;
+  background-color: #e22a2c;
+  color: #e5e5e5;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-right: 20px;
 }
 
 .footer-div {
   display: flex;
+  /* justify-content: space-between; */
 }

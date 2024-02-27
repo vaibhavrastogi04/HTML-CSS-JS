@@ -1,4 +1,9 @@
+import { runPrompt } from "./gemini_middleware.js";
+
+// runPrompt = require("./gemini_middleware.js").runPrompt;
+
 function geminiFrontEnd() {
+  // const runPrompt = require(runPrompt);
   const outerBody = document.createElement("div");
   outerBody.classList.add("outer-body");
 
@@ -57,7 +62,8 @@ function geminiFrontEnd() {
 
   const sendPromptButton = document.createElement("button");
   sendPromptButton.innerText = "Send";
-  //   sendPromptButton.classList.add("catalogue_button");
+  sendPromptButton.classList.add("send_button");
+  sendPromptButton.addEventListener("click", runPrompt);
   footerDiv.append(sendPromptButton);
 
   const body = document.getElementById("body");
@@ -70,3 +76,6 @@ function removeGemini() {
   const body = document.getElementById("body");
   body.remove(outerBody);
 }
+
+// export { geminiFrontEnd };
+window.geminiFrontEnd = geminiFrontEnd;
