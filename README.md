@@ -1,6 +1,6 @@
 # Photonix
 Front-end project for a fictional company selling retro cameras named Photonix.
-Design inspired by: https://dribbble.com/shots/12021555-Web-site-design-UI-UX-Designer-website-app-web-design
+\n Design inspired by: https://dribbble.com/shots/12021555-Web-site-design-UI-UX-Designer-website-app-web-design
 Implemented completely by me.
 
 Previews:
