@@ -10,3 +10,8 @@ Front-end project for a fictional company selling retro cameras named Photonix.
 ![preview2](https://github.com/vaibhavrastogi04/Photonix/assets/115574695/b9bc8907-17c0-4a6b-b8e2-dea5e44d0515)
 ![preview3](https://github.com/vaibhavrastogi04/Photonix/assets/115574695/d72d1af8-d99e-4bd2-b709-1d7a26d817d4)
 
+<br> <p> NOTE: The AI chatbot doesn’t work on the above website which is
+hosted on GitHub pages server due to not having a backend and the
+limitation of not being able to store the API key in the GitHub repository/
+(otherwise it would get blocked immediately)<p/>
+
