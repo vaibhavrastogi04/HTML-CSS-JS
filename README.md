@@ -5,9 +5,11 @@ Front-end project for a fictional company selling retro cameras named Photonix.
 <br> Huge thanks to Ramotion for their design. (https://dribbble.com/ramotion)
 <br> Implemented completely by me.
 
-<br> 
 In the directory, `scripts/api.js`, put your own API key.<br>
-    `export const API_KEY = "YOUR_API_KEY"`
+
+```javascript
+export const API_KEY = "YOUR_API_KEY";
+```
 
 ## Previews:
 
